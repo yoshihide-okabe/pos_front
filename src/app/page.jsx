@@ -10,7 +10,8 @@ export default function Home() {
 
   const fetchProduct = async () => {
     try {
-      const requestUrl = `http://localhost:8000/product/${code.trim()}`;
+      const requestUrl = `https://tech0-gen8-step4-pos-app-116.azurewebsites.net/${code.trim()}`;
+      https://tech0-gen8-step4-pos-app-116.azurewebsites.net/
       console.log("送信URL:", requestUrl);
 
       const response = await axios.get(requestUrl);

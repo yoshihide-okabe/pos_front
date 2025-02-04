@@ -51,7 +51,7 @@ export default function Home() {
 
     try {
       const response = await axios.post(
-        "http://localhost:8000/purchase",
+        "https://tech0-gen8-step4-pos-app-116.azurewebsites.net/purchase",
         request
       );
       alert(`購入完了: 合計金額 ${response.data.total_amount}円`);
